@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco-Friendly Haven - Sustainable Living</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    :root {
+      --green: rgb(34, 176, 34);
+    }
+    :root {
+    --primary-color: #4CAF50; /* Green */
+    --secondary-color: #8BC34A; /* Light Green */
+    --accent-color: #FFC107; /* Amber */
+    --dark-text: #333;
+    --light-text: #666;
+    --bg-light: #F9F9F9;
+    --bg-dark: #ECEFF1;
+    --border-color: #DDD;
+    --header-height: 80px;
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: 0.2s linear;
+    }
+
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 2rem 9%;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #2e7d61;
+      padding: 2.5rem 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      z-index: 1000;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    header .logo img {
+      width: 59px;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    header .logo a {
+      font-size: 3.6rem;
+      color: snow;
+      font-weight: bold;
+    }
+
+    header .navbar {
+      display: flex;
+      gap: 2rem;
+    }
+
+    header .navbar a {
+      font-size: 2rem;
+      color: black;
+      font-weight: 400;
+    }
+
+    header .navbar a:hover {
+      color: #b8e3ff;
+    }
+
+    header .icons a {
+      font-size: 2.4rem;
+      color: beige;
+      margin-left: 2rem;
+    }
+
+    header .icons a:hover {
+      color: #023047;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    header .fa-bars {
+      font-size: 3rem;
+      color: white;
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      top: 4.5rem;
+      right: 2rem;
+      z-index: 1001;
+    }
+
+    .home {
+      padding-top: 15rem;
+      padding-bottom: 7rem;
+      background-color: #d8e4bc;
+    }
+
+    .home-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+      padding: 2rem;
+    }
+
+    .earth-image img {
+      max-width: 100%;
+      width: 400px;
+      border-radius: 30px;
+      box-shadow: 20px 25px 25px rgba(40, 4, 4, 0.2);
+    }
+
+    .home-content .text {
+      max-width: 500px;
+      text-align: left;
+      z-index: 1;
+    }
+
+    .home-content .text h1 {
+      font-size: 4.5rem;
+      color: var(--green);
+      margin-bottom: 1.5rem;
+    }
+
+    .home-content .text p {
+      font-size: 2.2rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-text);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size:46px;
+    text-align: center;
+    margin-bottom: 63px;
+    margin-top: -53px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: lightgoldenrodyellow;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+.btn-secondary {
+    background-color: var(--dark-text);
+    color: #fff;
+    padding: 8px 18px;
+    font-size:17px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--light-text);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-size: 10px;
+    margin-top:-39px;
+    margin-bottom:36px ;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+ .cart-sidebar, .wishlist-sidebar { /* Added .wishlist-sidebar */
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  transition: right 0.3s ease;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.cart-sidebar.active, .wishlist-sidebar.active { /* Added .wishlist-sidebar */
+  right: 0;
+}
+
+.cart-header, .wishlist-header { /* Added .wishlist-header */
+  padding: 1rem;
+  background: #2e7d61;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: large;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 5rem;
+  color: white;
+  cursor: pointer;
+  margin-left: -10px;
+}
+
+.cart-items, .wishlist-items { /* Added .wishlist-items */
+  flex-grow: 1;
+  padding: 1rem;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.cart-items li, .wishlist-items li { /* Added .wishlist-items */
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+
+.cart-footer, .wishlist-footer { /* Added .wishlist-footer */
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+.cart-footer p, .wishlist-footer p { /* Added .wishlist-footer */
+ font-size: 20px;
+  
+}
+
+.cart-overlay, .wishlist-overlay { /* Added .wishlist-overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9998;
+  transition: opacity 0.3s ease;
+}
+
+.cart-overlay.active, .wishlist-overlay.active { /* Added .wishlist-overlay */
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/*active*/
+
+
+.slide-cart {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  border-left: 2px solid #ccc;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.slide-cart.open {
+  right: 0;
+}
+
+/*logout*/
+
+.logout-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .logout-form h1 {
+      margin-bottom: 20px;
+      color: #2e7d32;
+    }
+
+    .logout-form button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size:1.5rem;
+    }
+
+    .confirm-btn {
+      background-color:#5db184;
+      color: white;
+      width: 108px;
+      height: 3.5rem;
+    }
+
+    .cancel-btn {
+      background-color: #ccc;
+      color: #333;
+      width: 100px;
+      height: 3.5rem;
+    }
+
+    .confirm-btn:hover {
+      background-color:firebrick ;
+    }
+
+    .cancel-btn:hover {
+      background-color: #999;
+    }
+
+    .message {
+      margin-top: 20px;
+      color:darkblue;
+      font-weight: bold;
+      font-size: larger;
+    }
+
+/* Hero Section */
+.hero-section {
+    background: url('images/hero-eco-bg.jpg') no-repeat center center/cover; /* Placeholder image */
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* Overlay for readability */
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Products Section */
+.products-section, .info-section, .testimonials-section, .newsletter-section {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+    margin-top: 20px;
+}
+
+.products-section:nth-of-type(even), .info-section:nth-of-type(even), .testimonials-section:nth-of-type(even), .newsletter-section:nth-of-type(even) {
+    background-color: #fff;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 581px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width:226px;
+    height: 289px;
+    margin-top: 24px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.product-card h3 {
+    margin: 15px 0 10px;
+    margin-bottom: -9px;
+    font-size:26px;
+    color: var(--primary-color);
+}
+
+.product-card p {
+    font-size: 1.5em;
+    color: var(--light-text);
+    padding: 31px 30px 39px;
+    flex-grow: 1; /* Allows paragraph to take available space */
+}
+
+.product-card .price {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--dark-text);
+    margin-bottom: 69px;
+    margin-top:-81px;
+    display: block;
+}
+
+.product-card .btn-secondary {
+    margin-bottom: 76px;
+    margin-top:-34px;
+}
+
+.view-all-products {
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.product-card img {
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.product-card {
+  width: 100%;
+  max-width:350px;
+  margin: auto;
+}
+
+.product-grid {
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+
+/* Info Section (Why Choose Us) */
+.info-section {
+    text-align: center;
+    background-color: var(--bg-dark);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.info-item {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+}
+
+.info-item .icon-large {
+    font-size: 7em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.info-item h3 {
+    font-size: 2.0em;
+    margin-bottom: 10px;
+    color: unset;
+}
+
+.info-item p {
+    color: var(--light-text);
+    font-size:15px;
+}
+
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: var(--bg-light);
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    max-width: 450px;
+    text-align: center;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: var(--dark-text);
+    font-size:17px;
+}
+
+.testimonial-card cite {
+    font-size: x-large;
+    display: block;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.navbar .mobile-icons {
+  display: none;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+  background-color: #2e7d61;
+}
+
+.navbar .mobile-icons a {
+ 
+
+
+
+  
+}
+
+
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #2e7d5b;
+    color: #fff;
+    text-align: center;
+    padding: 79px 0;
+}
+
+.newsletter-section h2 {
+    color: #fff;
+}
+
+.newsletter-section h2::after {
+    background-color: #fff; /* White underline */
+}
+
+.newsletter-section p {
+    font-size: 2.0em;
+    margin-bottom: 30px;
+    color: linen;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.newsletter-form input[type="email"] {
+    flex-grow: 25;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+}
+
+.newsletter-form button {
+    padding: 12px 30px;
+    background-color: var(--accent-color);
+    color: var(--dark-text);
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #FFEB3B; /* Lighter amber */
+}
+
+
+/* Footer */
+.main-footer {
+    background-color:#d8e4bc;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 75px;
+    margin-bottom: 36px;
+    margin-left: 52px;
+}
+
+.footer-col h3 {
+    color:#333;
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.footer-col p, .footer-col ul li {
+    color: dimgray;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: dimgray;
+}
+
+.footer-col ul li a:hover {
+    color: var(--primary-color);
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: darkolivegreen;
+    font-size: 3.0em;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    font-size: 1.9em;
+    font-weight: 600;
+    color: darkslategray;
+}
+
+
+.custom-alert {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color:#023047;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-size: 1.6rem;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  animation: fadeInup 0.6s ease;
+}
+
+.custom-alert button {
+  background-color: #ffffff;
+  color: #de6909;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.custom-alert button:hover {
+  background-color: #e0f2e9;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+      }
+
+      header .fa-bars {
+        display: block;
+      }
+
+      .navbar .mobile-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+
+      header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background:#2e7d65;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: max-height 0.4s ease-in-out;
+        z-index: 1000;
+      }
+
+      #menu-toggle:checked ~ .navbar {
+        max-height: 500px;
+      }
+
+      header .navbar a {
+        padding: 1.5rem 2rem;
+        font-size: 2rem;
+        color: white;
+        width: 100%;
+        background-color: #2e7d61;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      header .icons {
+        display: none; /* Hide icons below the dropdown */
+      }
+
+      .home-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .home-content .text {
+        text-align: center;
+      }
+ .hero-section {
+        padding: 100px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .products-section, .info-section, .testimonials-section, .newsletter-section {
+        padding: 60px 0;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .newsletter-form button {
+        width: 90%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        width: 70%;
+    }
+
+    .footer-col ul {
+        padding-left: 0;
+    }
+
+    .social-links {
+        justify-content: center;
+        display: flex;
+    }
+
+      html {
+        font-size: 52%;
+      }
+
+      header .logo a {
+        font-size: 3.2rem;
+      }
+       .main-header .container {
+        padding: 0 15px;
+    }
+
+    .logo a {
+        font-size: 1.8em;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .product-grid, .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 200px;
+    }
+
+    .cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  transition: right 0.3s ease;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.cart-sidebar.active {
+  right: 0;
+}
+
+.cart-header {
+  padding: 1rem;
+  background: #2e7d61;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: large;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 5rem;
+  color: white;
+  cursor: pointer;
+  margin-left: -10px;
+}
+
+.cart-items {
+  flex-grow: 1;
+  padding: 1rem;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.cart-items li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+
+.cart-footer {
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+}
+.cart-footer p {
+ font-size: 20px;
+  
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9998;
+  transition: opacity 0.3s ease;
+}
+
+.cart-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+    }
+
+
+
+    
+/* Responsive Design */
+@media (max-width: 992px) {
+    .main-nav {
+        display: none; /* Hide main nav on smaller screens */
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle button */
+    }
+
+    .main-header .container {
+        justify-content: space-between;
+    }
+
+    .main-nav.active {
+        display: block;
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .main-nav.active ul {
+        flex-direction: column;
+    }
+
+    .main-nav.active ul li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .product-grid, .info-grid, .footer-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* New styles for the auth modal */
+.auth-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.auth-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.auth-modal-content {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+.auth-modal-overlay.active .auth-modal-content {
+    transform: translateY(0);
+}
+
+.auth-modal-content h3 {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  text-transform: none; /* Override capitalize for titles */
+}
+
+.auth-modal-content .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+}
+
+.auth-modal-content input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.6rem;
+}
+
+.auth-modal-content .btn-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+.auth-modal-content .alt-links {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.auth-modal-content .alt-links a {
+  color: var(--primary-color);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.auth-modal-content .alt-links a:hover {
+  text-decoration: underline;
+}
+
+.auth-modal-content .hidden {
+  display: none;
+}
+
+.logout-link {
+    color: white !important; /* Ensure visibility against header background */
+    cursor: pointer;
+    font-size: 2.4rem;
+    margin-left: 2rem;
+}
+.logout-link:hover {
+  color: #023047 !important;
+}
+
+
+  </style>
+</head>
+  <body>
+  <header>
+    <div class="logo">
+      <img src="https://i.postimg.cc/QM7MXn9y/logo.jpg" alt="ECO Logo" />
+      <a href="#">EcoHaven<span>.</span></a>
+    </div>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="fas fa-bars"></label>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#review">Review</a>
+      <a href="#contact">Contact</a>
+      <div class="mobile-icons">
+  <a href="#"  onclick="toggleWishlist()"> Wishlist</a>
+  <a href="#"  onclick="handleUserAuthClick()"> Login</a>
+  <a href="#" onclick="toggleCart()"> Cart 
+    <span id="cart-count-mobile" style="background: #FFC107; color: black; padding: 2px 6px; border-radius: 50%; font-size: 0.8rem; margin-left: 5px;">0</span>
+  </a>
+</div>
+
+    </nav>
+
+    <div class="icons">
+      <a href="#" class="fas fa-heart" onclick="toggleWishlist()"></a>&emsp;
+      <a href="#" id="user-auth-icon" class="fas fa-user" onclick="handleUserAuthClick()"></a>&emsp;&emsp;
+   <span class="icon cart-icon"  onclick="toggleCart()">
+ <span style="font-size: 27px;">&#x1F6D2;</span>
+
+  <span id="cart-count" style="background: #FFC107; color: black; padding: 2px 6px; border-radius: 50%; font-size: 0.8rem; margin-left: 5px;">0</span>
+</span>
+    </div>
+  </header>
+  
+
+  <div id="auth-modal-overlay" class="auth-modal-overlay">
+    <div class="auth-modal-content">
+      <button class="close-btn" onclick="closeAuthModal()">&times;</button>
+
+      <div id="login-form" class="auth-form">
+        <h3>Login to EcoHaven</h3>
+        <form onsubmit="handleLogin(event)">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <div class="alt-links">
+          <a onclick="showRegisterForm()">Don't have an account? Register</a><br>
+          <a onclick="showForgotPasswordForm()">Forgot Password?</a>
+          <a onclick="showLogoutForm()">Logout</a>
+
+        </div>
+      </div>
+
+      <div id="register-form" class="auth-form hidden">
+        <h3>Register for EcoHaven</h3>
+        <form onsubmit="handleRegister(event)">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Confirm Password" required />
+          <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+        <div class="alt-links">
+          <a onclick="showLoginForm()">Already have an account? Login</a>
+        </div>
+      </div>
+
+      <div id="forgot-password-form" class="auth-form hidden">
+        <h3>Forgot Password</h3>
+        <p style="font-size: 1.4rem; color: #555; margin-bottom: 20px;">Enter your email to receive a password reset link.</p>
+        <form onsubmit="handleForgotPassword(event)">
+          <input type="email" placeholder="Email" required />
+          <button type="submit" class="btn btn-primary">Send Reset Link</button>
+        </form>
+        <div class="alt-links">
+          <a onclick="showLoginForm()">Back to Login</a>
+        </div>
+        
+       </div>
+
+      <div id="logout-form" class="auth-form hidden">
+  <h3>Are you sure you want to logout?</h3>
+  <button class="confirm-btn" onclick="logoutform()">Yes, Logout</button>
+  <button class="cancel-btn" onclick="cancelLogout()">Cancel</button>
+  <div class="message" id="logoutMessage"></div>
+</div>
+
+
+     </div>
+   </div>
+    
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="earth-image">
+        <img src="https://i.postimg.cc/ncdrTmf0/home-bg1.jpg" alt="Earth" />
+      </div>
+      <div class="text">
+        <h1>Protect Our Planet</h1>
+        <p>
+          Eco-friendly choices today ensure a sustainable tomorrow.<br />
+          Together, let's nurture nature.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+ <section id="products" class="products-section">
+            <div class="container">
+                <h2>Our Featured Products</h2>
+                <div class="product-grid" id="product-container">
+                    <div class="product-card">
+                        <img src="https://i.postimg.cc/T165Mvt0/single-waterbottle.jpg" alt="Eco-Friendly Reusable Water Bottle">
+                        <h3>Reusable Water Bottle</h3>
+                        <p>Stay hydrated with our durable,BPA-free bottle.</p>
+                        <span class="price">₹200</span>
+                        <button class="btn btn-secondary add-to-cart" data-product-id="1">Add to Cart</button>
+                        <button class="btn btn-outline" onclick="addToWishlist('Reusable Water Bottle', '₹200')">Wishlist</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://i.postimg.cc/jSdNSKtk/toothpasteset.jpg" alt="Bamboo Toothbrush">
+                        <h3>Bamboo Toothbrush Set</h3>
+                        <p>An eco-conscious alternative for your daily dental routine.</p>
+                        <div class="price">₹250</div>
+                        <button class="btn btn-secondary add-to-cart"
+                        data-product-id="2">Add to Cart</button>
+                        <button class="btn btn-outline" onclick="addToWishlist('Bamboo Toothbrush Set', '₹250')"> Wishlist</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="https://i.postimg.cc/tC9nByZC/zero-waste-kit.jpg" alt="Zero Waste Starter Kit">
+                        <h3>Zero Waste Starter Kit</h3>
+                        <p>Begin your journey to a plastic-free lifestyle.</p>
+                        <span class="price">₹340</span>
+                        <button class="btn btn-secondary add-to-cart" data-product-id="3">Add to Cart</button>
+                        <button class="btn btn-outline" onclick="addToWishlist('Zero Waste Starter Kit', '₹340')"> Wishlist</button>
+                    </div>
+                    </div>
+            </div>  
+                 <div class="view-all-products">
+        <a href="#" class="btn btn-outline" id="load-more">View All Products</a>
+      </div>
+
+    <div class="view-all-products" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+
+  <a href="#home" class="btn btn-secondary">Go Back to Home Page</a>
+</div>
+</div>
+
+
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button id="close-cart" class="btn-close">&times;</button>
+  </div>
+  <ul id="cart-items-list" class="cart-items"></ul>
+  <div class="cart-footer">
+    <p> Total: <span id="sidebar-total">₹0</span></strong></p><br>
+
+    <button id="clear-cart" class="btn btn-secondary">Clear Cart</button>
+    <button class="btn btn-primary">Checkout</button>
+  </div>
+</div>
+<div id="cart-overlay" class="cart-overlay"></div>
+
+
+<div id="wishlist-sidebar" class="wishlist-sidebar">
+  <div class="wishlist-header">
+    <h3>Your Wishlist</h3>
+    <button id="close-wishlist" class="btn-close">&times;</button>
+  </div>
+  <ul id="wishlist-items-list" class="wishlist-items"></ul>
+  <div class="wishlist-footer">
+    <button id="clear-wishlist" class="btn btn-primary">Clear Wishlist</button>
+
+    
+  </div>
+</div>
+<div id="wishlist-overlay" class="wishlist-overlay"></div>
+
+  </section>  
+
+
+        <section id="about" class="info-section">
+            <div class="container">
+                <h2>Why Choose EcoHaven?</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-leaf icon-large"></i>
+                        <h3>100% Eco-Friendly</h3>
+                        <p>Every product is carefully vetted for its environmental impact.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-shipping-fast icon-large"></i>
+                        <h3>Carbon-Neutral Shipping</h3>
+                        <p>We offset the emissions from every delivery.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-hand-holding-heart icon-large"></i>
+                        <h3>Support Local Artisans</h3>
+                        <p>Many of our products are sourced from small, ethical businesses.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <section id="review" class="testimonials-section">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-card">
+                        <p>"EcoHaven has made it so easy to switch to sustainable products. Their quality is amazing!"</p>
+                        <cite>- Sarah L.</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"I love the variety and commitment to the environment. Highly recommend!"</p>
+                        <cite>- Mark T.</cite>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+
+        
+        <section id="contact" class="newsletter-section">
+            <div class="container">
+                <h2>Join Our Eco-Community</h2>
+                <p>Sign up for our newsletter to get exclusive deals and sustainability tips!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <h3>EcoHaven</h3>
+                    <p>Your destination for thoughtfully curated eco-friendly products that make a difference.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#products">Shop</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Support</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>123 Green Street, Eco City, 12345</p>
+                    <p>Email: info@ecohaven.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eco-Friendly Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="checkout-modal-overlay" class="auth-modal-overlay">
+  <div class="auth-modal-content">
+    <button class="close-btn" onclick="closeCheckoutModal()">&times;</button>
+    <h3>Checkout</h3>
+    <form onsubmit="handleCheckout(event)">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Shipping Address" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <button type="submit" class="btn btn-primary">Place Order</button>
+    </form>
+  </div>
+</div>
+
+
+<div id="order-success-modal" class="auth-modal-overlay">
+  <div class="auth-modal-content">
+    <button class="close-btn" onclick="closeOrderSuccessModal()">&times;</button>
+    <h3>Thank You for Your Order!</h3>
+    <p style="font-size: 1.6rem;">Your order has been successfully placed.</p>
+    <p style="font-size: 1.5rem;">Please rate your experience:</p>
+    <form onsubmit="submitRating(event)">
+      <input type="number" id="rating-input" min="1" max="5" placeholder="Rate from 1 to 5" required />
+      <button type="submit" class="btn btn-primary">Submit Rating</button>
+    </form>
+  </div>
+</div>
+
+<div id="custom-alert" class="custom-alert hidden">
+  <p id="custom-alert-message">Thank you for subscribing!</p>
+  <button onclick="closeCustomAlert()">OK</button>
+</div>
+
+
+  </body>
+
+ <script>
+document.addEventListener('DOMContentLoaded', () => {
+  let cart = [];
+  let total = 0;
+  let wishlist = JSON.parse(localStorage.getItem('wishlist')) || []; // Load wishlist from localStorage
+
+  const cartCount = document.getElementById('cart-count');
+  const cartItemsList = document.getElementById('cart-items-list');
+  const sidebarTotal = document.getElementById('sidebar-total');
+  const overlay = document.getElementById('cart-overlay');
+  const cartSidebar = document.getElementById('cart-sidebar');
+  const closeCart = document.getElementById('close-cart');
+  const clearCartBtn = document.getElementById('clear-cart');
+  const container = document.getElementById('product-container');
+  const loadMoreBtn = document.getElementById('load-more');
+
+  // Auth modal elements
+  const authModalOverlay = document.getElementById('auth-modal-overlay');
+  const loginForm = document.getElementById('login-form');
+  const registerForm = document.getElementById('register-form');
+  const forgotPasswordForm = document.getElementById('forgot-password-form');
+  const userAuthIcon = document.getElementById('user-auth-icon');
+  const logoutLink = document.getElementById('logout-link');
+
+  // Wishlist elements
+  const wishlistSidebar = document.getElementById('wishlist-sidebar');
+  const wishlistOverlay = document.getElementById('wishlist-overlay');
+  const closeWishlistBtn = document.getElementById('close-wishlist');
+  const wishlistItemsList = document.getElementById('wishlist-items-list');
+  const clearWishlistBtn = document.getElementById('clear-wishlist');
+
+const updateSidebar = () => {
+  cartItemsList.innerHTML = '';
+  cart.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <span>${item.name} <strong>₹${item.price}</strong></span>
+      <button class="btn btn-secondary" style="margin-left: 10px;" onclick="removeFromCart(${index})">Remove</button>
+    `;
+    cartItemsList.appendChild(li);
+  });
+  sidebarTotal.textContent = `₹${total}`;
+  cartCount.textContent = cart.length;
+};
+cartCount.textContent = cart.length;
+document.getElementById('cart-count-mobile').textContent = cart.length;
+
+
+
+  const updateCart = (name, priceStr) => {
+    const price = parseInt(priceStr.replace('₹', '').trim()) || 0;
+    total += price;
+    cart.push({ name, price });
+    updateSidebar();
+
+  window.removeFromCart = function(index) {
+    const removedItem = cart.splice(index, 1)[0];
+    total -= removedItem.price;
+    updateSidebar();
+  };
+  };
+  document.querySelectorAll('.add-to-cart').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.product-card');
+      const name = card.querySelector('h3').textContent;
+      const price = card.querySelector('.price').textContent;
+      updateCart(name, price);
+      cartSidebar.classList.add('active');
+      overlay.classList.add('active');
+    });
+  });
+
+  if (loadMoreBtn && container) {
+    const moreProducts = [
+      { name: "Organic Cotton Tote", img: "https://i.postimg.cc/1tgr5ScZ/tote-bag.jpg", desc: "Stylish, reusable, and made from 100% organic cotton.", price: "₹349" },
+      { name: "Kitchen Compost Bin (1)", img:"https://i.postimg.cc/5233snND/bin.jpg", desc: "Turn food waste into compost easily with this bin.", price: "₹499" },
+      { name: "Natural Herbal Soap (pack of 2)", img: "https://i.postimg.cc/KcMD6Z8P/soap.jpg", desc: "Chemical-free handmade soap with essential oils.", price: "₹299" },
+      { name: "Seed Pen (Pack of 10)", img: "https://i.postimg.cc/Bvz2zyW7/sed-pen.jpg", desc: "Plantable Seed pens: Recycled, Eco-Friendly.", price: "₹499" },
+      { name: "Wooden Hair Comb(pack of 1)", img: "https://i.postimg.cc/HsmXFXKm/wooden-comb.jpg", desc: "Gentle detangling and reduces hair loss.", price: "₹199" }
+    ];
+
+    loadMoreBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      moreProducts.forEach(product => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.innerHTML = `
+          <img src="${product.img}" alt="${product.name}">
+          <h3>${product.name}</h3>
+          <p>${product.desc}</p>
+          <span class="price">${product.price}</span>
+          <button class="btn btn-secondary add-to-cart">Add to Cart</button>
+          <button class="btn btn-outline" onclick="addToWishlist('${product.name}', '${product.price}')"> Wishlist</button>
+        `;
+        container.appendChild(card);
+        card.querySelector('.add-to-cart').addEventListener('click', () => {
+          updateCart(product.name, product.price);
+          cartSidebar.classList.add('active');
+          overlay.classList.add('active');
+        });
+      });
+      loadMoreBtn.style.display = 'none';
+    });
+  }
+
+  clearCartBtn.addEventListener('click', () => {
+    cart = [];
+    total = 0;
+    updateSidebar();
+  });
+
+  // Checkout modal logic
+const checkoutModalOverlay = document.getElementById('checkout-modal-overlay');
+const checkoutButton = document.querySelector('.cart-footer .btn-primary');
+
+checkoutButton.addEventListener('click', () => {
+  if (cart.length === 0) {
+    alert('Your cart is empty!');
+    return;
+  }
+  checkoutModalOverlay.classList.add('active');
+});
+
+window.closeCheckoutModal = function() {
+  checkoutModalOverlay.classList.remove('active');
+};
+
+window.handleCheckout = function(event) {
+  event.preventDefault();
+  alert("Thank you for your purchase! (Simulated)");
+  checkoutModalOverlay.classList.remove('active');
+  cart = [];
+  total = 0;
+  updateSidebar();
+};
+
+window.handleCheckout = function(event) {
+  event.preventDefault();
+  checkoutModalOverlay.classList.remove('active');
+  cart = [];
+  total = 0;
+  updateSidebar();
+  orderSuccessModal.classList.add('active');
+};
+
+const orderSuccessModal = document.getElementById('order-success-modal');
+
+window.closeOrderSuccessModal = function() {
+  orderSuccessModal.classList.remove('active');
+};
+
+window.submitRating = function(event) {
+  event.preventDefault();
+  const rating = document.getElementById('rating-input').value;
+  alert(`Thank you for rating us ${rating} star(s)!`);
+  closeOrderSuccessModal();
+};
+
+
+
+
+
+  closeCart.addEventListener('click', () => {
+    cartSidebar.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+
+  overlay.addEventListener('click', () => {
+    cartSidebar.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+
+  // Function to toggle the cart sidebar visibility
+  window.toggleCart = function() {
+    cartSidebar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  };
+
+  // --- Authentication Functions ---
+
+  // Check login status on page load
+  const checkLoginStatus = () => {
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    if (isLoggedIn) {
+      userAuthIcon.classList.add('hidden'); // Hide user icon
+      logoutLink.classList.remove('hidden'); // Show logout link
+    } else {
+      userAuthIcon.classList.remove('hidden'); // Show user icon
+      logoutLink.classList.add('hidden'); // Hide logout link
+    }
+  };
+
+  window.handleUserAuthClick = function() {
+    // If not logged in, open login modal
+    if (localStorage.getItem('isLoggedIn') !== 'true') {
+      openAuthModal('login');
+    }
+    // If logged in, clicking the user icon could lead to a profile page (not implemented here)
+    // For now, if logged in, the logout button will be visible.
+  };
+
+  window.handleLogout = function() {
+    localStorage.setItem('isLoggedIn', 'false');
+    alert('You have been logged out.');
+    checkLoginStatus(); // Update header icons
+  };
+
+  const openAuthModal = (formType) => {
+    authModalOverlay.classList.add('active');
+    // Hide all forms initially
+    loginForm.classList.add('hidden');
+    registerForm.classList.add('hidden');
+    forgotPasswordForm.classList.add('hidden');
+
+    // Show the requested form
+    if (formType === 'login') {
+      loginForm.classList.remove('hidden');
+    } else if (formType === 'register') {
+      registerForm.classList.remove('hidden');
+    } else if (formType === 'forgot') {
+      forgotPasswordForm.classList.remove('hidden');
+    }
+  };
+
+  window.closeAuthModal = function() {
+    authModalOverlay.classList.remove('active');
+  };
+
+  window.showLoginForm = function() {
+    openAuthModal('login');
+  };
+
+window.showLogoutForm = function () {
+  loginForm.classList.add('hidden');
+  registerForm.classList.add('hidden');
+  forgotPasswordForm.classList.add('hidden');
+  document.getElementById('logout-form').classList.remove('hidden');
+};
+
+window.logoutform = function () {
+  localStorage.setItem('isLoggedIn', 'false');
+  document.getElementById('logoutMessage').textContent = "Successfully logged out!";
+  setTimeout(() => {
+    closeAuthModal();
+    checkLoginStatus();
+  }, 1500);
+};
+
+window.cancelLogout = function () {
+  document.getElementById('logout-form').classList.add('hidden');
+  loginForm.classList.remove('hidden');
+  document.getElementById('logoutMessage').textContent = "";
+};
+
+
+
+
+  window.showRegisterForm = function() {
+    openAuthModal('register');
+  };
+
+  window.showForgotPasswordForm = function() {
+    openAuthModal('forgot');
+  };
+
+
+
+
+  window.handleLogin = function(event) {
+    event.preventDefault();
+    // In a real app, you'd send data to a server and verify credentials.
+    // For this demo, simulate success and set login status.
+    const email = event.target.elements[0].value;
+    const password = event.target.elements[1].value;
+
+    if (email === "test@example.com" && password === "password123") { // Example credentials
+      localStorage.setItem('isLoggedIn', 'true');
+      alert("Login successful!");
+      closeAuthModal();
+      checkLoginStatus(); // Update header icons
+    } else {
+      alert("Invalid email or password.");
+    }
+  };
+
+  window.handleRegister = function(event) {
+    event.preventDefault();
+    // In a real app, you'd send data to a server to create a new user.
+    alert("Registration successful! Please login.");
+    closeAuthModal();
+    showLoginForm(); // Redirect to login after registration
+  };
+
+  window.handleForgotPassword = function(event) {
+    event.preventDefault();
+    // In a real app, you'd send an email with a reset link.
+    alert("Password reset link sent to your email (simulated).");
+    closeAuthModal();
+    showLoginForm(); // Back to login
+  };
+
+  // --- Wishlist Functions ---
+
+  const updateWishlistSidebar = () => {
+    wishlistItemsList.innerHTML = '';
+    if (wishlist.length === 0) {
+      const li = document.createElement('li');
+      li.textContent = 'Your wishlist is empty.';
+      wishlistItemsList.appendChild(li);
+    } else {
+     wishlist.forEach((item, index) => {
+  const li = document.createElement('li');
+  li.innerHTML = `
+    <span>${item.name} <span>${item.price}</span></span>
+    <div style="display: flex; flex-direction: column; gap: 5px;">
+      <button class="btn-secondary" onclick="removeFromWishlist(${index})">Remove</button>
+      <button class="btn btn-primary" onclick="addToCartFromWishlist('${item.name}', '${item.price}')">Add to Cart</button>
+    </div>
+  `;
+  wishlistItemsList.appendChild(li);
+});
+
+    }
+    localStorage.setItem('wishlist', JSON.stringify(wishlist)); // Save wishlist to localStorage
+  };
+
+  window.toggleWishlist = function() {
+    wishlistSidebar.classList.toggle("active");
+    wishlistOverlay.classList.toggle("active");
+    updateWishlistSidebar(); // Update content when opening
+  };
+
+  closeWishlistBtn.addEventListener('click', () => {
+    wishlistSidebar.classList.remove('active');
+    wishlistOverlay.classList.remove('active');
+  });
+
+  wishlistOverlay.addEventListener('click', () => {
+    wishlistSidebar.classList.remove('active');
+    wishlistOverlay.classList.remove('active');
+  });
+
+  window.addToWishlist = function(productName, productPrice) {
+    const existingItem = wishlist.find(item => item.name === productName);
+    if (!existingItem) {
+      wishlist.push({ name: productName, price: productPrice });
+      alert(`${productName} added to wishlist!`);
+      updateWishlistSidebar(); // Update sidebar immediately after adding
+    } else {
+      alert(`${productName} is already in your wishlist.`);
+    }
+  };
+
+  window.removeFromWishlist = function(index) {
+    const removedItem = wishlist.splice(index, 1);
+    alert(`${removedItem[0].name} removed from wishlist.`);
+    updateWishlistSidebar();
+  };
+
+
+
+
+  clearWishlistBtn.addEventListener('click', () => {
+    wishlist = [];
+    alert('Your wishlist has been cleared.');
+    updateWishlistSidebar();
+ window.addToCartFromWishlist = function(name, priceStr) {
+  const price = parseInt(priceStr.replace('₹', '').trim()) || 0;
+  cart.push({ name, price });
+  total += price;
+  updateSidebar();
+  alert(`${name} added to cart.`);
+};
+
+ 
+ 
+  });
+
+
+
+
+  // Initialize login status and wishlist on page load
+  checkLoginStatus();
+  updateWishlistSidebar();
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const newsletterForm = document.querySelector(".newsletter-form");
+
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const emailInput = newsletterForm.querySelector('input[type="email"]');
+      const userEmail = emailInput.value.trim();
+
+      if (userEmail === "") return;
+
+      showCustomAlert(`🎉 Thank you for subscribing, Eco-Warrior! 🌿<br>
+You're now part of the EcoHaven family.<br>
+Watch your inbox at <strong>${userEmail}</strong> for green updates!`);
+
+      newsletterForm.reset();
+    });
+  }
+});
+
+function showCustomAlert(message) {
+  const alertBox = document.getElementById("custom-alert");
+  const alertMessage = document.getElementById("custom-alert-message");
+  alertMessage.innerHTML = message;
+  alertBox.classList.remove("hidden");
+}
+
+function closeCustomAlert() {
+  document.getElementById("custom-alert").classList.add("hidden");
+}
+
+
+</script>
+</html>
